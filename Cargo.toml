@@ -1,0 +1,20 @@
+[package]
+name = "async_logger_proc_macro"
+version = "0.0.0"
+authors = ["Purple Hair Rust Bard <AshantiMutinta@gmail.com>"]
+description = "A `cargo generate` template for quick-starting a procedural macro crate"
+keywords = ["template", "proc_macro", "procmacro"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = { version = "1.0.8", features = ["full","fold"] }
+
+[dev-dependencies]
+async-log = "2.0.0"
+
+
